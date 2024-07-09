@@ -1,0 +1,884 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box ;
+   
+}
+
+body{
+    background-color: rgb(184, 184, 184);
+    perspective: 700;
+}
+
+
+
+.header-img{
+    height:80px;
+    width:150px;
+    border-radius:60%;
+    transform: translateX(150px);
+}
+
+.header-list{
+    position: absolute;
+     transform: translateY(25px);
+     margin-right:20px;
+     text-decoration-style: none;
+     top:0;
+     left:690px;
+}
+
+.header-list li{
+    display:inline-block;
+    font-size: 25px;
+}
+
+
+
+.header-li{
+    position: relative;
+}
+
+.header-li, .header-a{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 20px;
+    text-shadow:1px 1px 2px rgb(100, 101, 42); 
+    text-decoration:none ;
+    color:rgb(11, 46, 33);
+}
+
+
+
+.header-li:hover , .header-a:hover{
+    color: rgba(31, 202, 202, 0.5);
+    /* border: 2px solid rgb(22, 111, 78); */
+}
+
+.product-table{ 
+    transform: scale(0,0);
+    position: absolute;
+    border: 3px solid rgb(69, 162, 162);
+    background-color: rgb(166, 166, 59);
+    /* left:970px; */
+    top:40px;
+    transition: 1s;
+    display:grid;
+    grid-template-columns:repeat(3,1fr) ;
+    width:400px;
+    padding: 15px;
+}
+
+.products-li{
+    position: relative;
+}
+
+.products-li:hover .product-table{
+    transform: scale(1,1);
+}
+
+
+.table-ul{
+    margin-left: 20px;
+}
+
+ .table-item{
+  color:rgb(15, 97, 97);
+  text-decoration: none;
+}
+
+.table-caption{
+    color:rgb(15, 97, 97);
+    text-decoration: underline dotted;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.table-ul li{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+.header-c{
+   transform: translateY(4px);
+   color:rgb(11, 46, 33);
+}
+
+
+.header-c:hover{
+    font-size: 30px;
+    color: rgba(12, 94, 94, 0.5);
+}
+
+.background{
+width:80%;
+height:550px;
+margin: auto;
+/* background-image:url(../Images/ce16f2d756f89e38a2b1a1135e4e6fc7.jpg) ;
+background-size:cover ; */
+background-color:rgba(31, 202, 202, 0.5);
+transform: translateY(40px);
+position: relative;
+z-index:-1;
+}
+
+.background-overley{
+position: absolute;
+height:100%;
+width:100%;
+background-color: rgba(0,0,0,0.1);
+transform-style: preserve-3d;
+}
+
+.background-img{
+    background-image: url(../Images/40bde50fcd35bda4d55deb6fca75bc8f.jpg);
+    position: absolute;
+    width:400px;
+    height:500px;
+   margin-left:59%;
+   transform: translateY(25px);
+   background-size: cover;
+   background-position: center;
+   
+}
+
+
+.background-info{
+   position: absolute;
+   /* background-color: blanchedalmond; */
+   margin-top: 200px;
+   margin-left: 15px;
+}
+
+.background-h2{
+    font-size: 40px;
+    font-family: 'Playball', cursive;
+    color:rgb(10, 59, 59);
+    margin-left: 120px;
+}
+
+.background-info p{
+    font-size: 23px;
+    color:rgb(10, 59, 59);
+    font-family: 'Playball', cursive;
+}
+
+.background-info button{
+    background-color: rgb(166, 166, 59);
+    color:rgb(15, 97, 97);
+    font-size: 25px;
+    border: solid 2px ;
+    border-radius:30px 20px ;
+    margin-top: 13px;
+    margin-left: 240px;
+}
+
+.background-info button:hover{
+    background-color:rgb(15, 97, 97);
+    color: rgb(166, 166, 59);
+    font-size: 30px;
+}
+
+.category-section{
+width:80%;
+margin: auto;
+/* height:450px; */
+margin-top:68px;
+/* background-color: bisque; */
+text-align: center;
+}
+
+.category{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    /* height:100%; */
+    /* background-color: aquamarine; */
+    justify-content:space-evenly;
+    align-content:center;
+    margin-top:20px;
+}
+
+.category-h2{
+    font-size: 40px;
+    font-family:serif;
+    color:rgb(37, 128, 97);
+    text-shadow:1px 1px 5px aquamarine;
+}
+.category-h2 hr{
+    height:3px;
+    width:120px;
+    background-color:rgb(37, 128, 97);
+    border: none;
+    margin-left:520px;
+    transition: 1s;
+}
+
+.category-h2:hover  hr{
+   transform: scale(1.3,1);
+}
+
+
+
+
+.category-item1{
+    flex-basis:20%;
+    background-color:beige ;
+    height:300px;
+    margin-bottom: 150px;
+    background-image:url(../Images/animal\ feed.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.category-item2{
+    flex-basis:20%;
+    background-color:azure;
+    height:300px;
+    background-image:url(../Images/pets\ accessories.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.category-item3{
+    flex-basis:20%;
+    background-color:blueviolet;
+    height:300px;
+    background-image:url(../Images/horse\ cae.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.category-item4{
+    flex-basis:20%;
+    background-color:blue;
+    height:300px;
+    background-image:url(../Images/pet\ care.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.category-info{
+    width:100%;
+    position:absolute;
+    /* background-color: blanchedalmond; */
+}
+
+.category-info h2{
+    font-family:serif;
+    margin-top: 280px;
+    color:rgb(37, 128, 97);
+}
+
+
+.category-a i{
+display: block;
+}
+.category-a{
+    text-decoration: none;
+}
+
+ .qr{
+  font-size: 20px;
+  margin-left:200px;
+  margin-top: 10px;
+  color:rgb(164, 52, 17);
+  visibility: hidden;
+  opacity:0.8;
+}
+
+
+.category-item1:hover .qr , .category-item2:hover .qr,  .category-item3:hover .qr, .category-item4:hover .qr{
+    visibility: visible;
+
+}
+
+
+
+ .dots{
+    font-size: 15px;
+    margin-top: 10px;
+    color:rgb(166, 46, 10);
+    visibility: hidden;
+    opacity: 0.8; 
+}
+
+.qr:hover  .dots{
+visibility: visible;
+opacity:1;
+transition-delay:0.8s;
+}
+
+.qr:hover{
+    opacity:1;
+}
+
+
+
+.category-item1 h2{
+transform: translateX(15px);
+text-shadow:1px 1px 5px aquamarine;
+display:inline-block;
+}
+
+.category-item1 .next{
+    transform: translateX(40px);
+    font-size: 20px;
+    color:rgb(37, 128, 97);
+     text-shadow:1px 1px 5px aquamarine;
+     visibility: hidden;
+ }
+ 
+
+ .category-item2 h2, .category-item3 h2, .category-item4 h2{
+    transform: translateX(15px);
+    text-shadow:1px 1px 5px aquamarine;
+    display:inline-block;
+    }
+
+.category-item2 .next, .category-item3 .next, .category-item4 .next{
+   transform: translateX(30px);
+   font-size: 20px;
+   color:rgb(37, 128, 97);
+    text-shadow:1px 1px 5px aquamarine;
+    visibility: hidden;
+}
+
+
+.category-item1:hover .category-info .next , .category-item2:hover .category-info .next, .category-item3:hover .category-info .next, .category-item4:hover .category-info .next{
+    visibility: visible;
+    transition: 0.5s;
+
+}
+
+.discount-parent{
+    width:80%;
+    display:flex;
+    margin: auto;
+    align-items: center; 
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.disc-item1{
+    height:270px;
+    background-color:rgba(82, 197, 159, 0.4);
+    box-shadow: 1px 1px 6px 5px aquamarine;
+    flex-basis:40%;
+    padding-top:20px;
+    padding-left:7px;
+    margin-left: 10px;
+}
+
+.disc-item1 span{
+    font-size: 23px;
+    color:rgb(13, 129, 90);
+    font-weight: bold;
+
+}
+
+.disc-item1 i{
+    font-size: 20px;
+    color:rgb(13, 129, 90);
+    font-weight: bold;
+
+}
+
+.disc-item1 p{
+    font-size: 20px;
+    color:rgb(12, 75, 53);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.disc-item1 hr{
+    background-color: rgb(35, 99, 78);
+    border: none;
+    height:3px;
+    width:50px;
+    margin-top: 90px;
+    display: inline-block;
+}
+
+.disc-hr1{
+    margin-left:290px;
+}
+
+
+
+.disc-item2{
+    height:270px;
+    background-color: rgb(28, 72, 57);
+    background-image:url(../Images/dog\ walker.jpg) ;
+    background-size: cover;
+    background-position: center;
+    flex-basis:25%;
+    padding-top:13px;
+    padding-left:7px;
+    transition: 1s;
+}
+
+.disc-item2 p{
+    font-size: 15px;
+    color:rgb(13, 129, 90);
+}
+
+.disc-item2 h3{
+    font-size: 22px;
+    color:rgb(37, 128, 97);
+}
+
+.disc-item3{
+    height:270px;
+    background-color: rgb(178, 241, 220);
+     background-image:url(../Images/Pets\ sitter.jpg) ;
+    background-size: cover;
+    background-position: center;
+    flex-basis:25%;
+    padding-top:13px;
+    padding-left:5px;
+    transition: 1s;
+}
+
+.disc-item3 p{
+    font-size: 15px;
+    color:rgb(13, 129, 90);
+}
+
+.disc-item3 h3{
+    font-size: 20px;
+    color:rgb(37, 128, 97);
+}
+
+
+.disc-item3:hover, .disc-item2:hover{
+    transform: scale(1.1,1.1);
+}
+
+.run-parent{
+    /* height:100vh; */
+    width: 80%;
+    margin: auto;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    transform: translateY(30px);
+}
+
+.run-item{
+    height:150px;
+    flex-basis:20%;
+    padding-top: 50px;
+    text-align: center;
+     border-right:3px solid rgb(24, 97, 74) ;
+}
+
+.run-item5{
+    border-right:none;
+}
+
+.run-icon1{
+    transform: translateY(-40px);
+     text-align: center;
+     height:70%;
+     translate:1s;
+    position: relative;
+     margin-left:35%;
+     overflow: hidden;
+}
+
+.run-icon{
+    color:rgb(32, 143, 106,0.5);
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition:  0.4s;
+}
+
+.run-icon1:hover .run-icon {
+    transform: translateY(1px);
+    color:rgb(32, 143, 106,1);
+  }
+
+
+  
+.run-icon2{
+    color:rgb(32, 143, 106,0.5);
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ;
+}
+
+.run-icon1:hover .run-icon2{
+    transform: translateY(-200px);
+}
+
+.run-item h2{
+    font-size: 20px;
+    transform: translateY(-30px);
+    color:rgb(32, 143, 106);
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.run-item p{
+    font-size:15px;
+    transform: translateY(-30px);
+    color:rgb(32, 143, 106,0.8);
+    font-weight: bold;
+}
+
+
+.run-icon1{
+    transform: translateY(-40px);
+     text-align: center;
+     height:70%;
+     translate:1s;
+    position: relative;
+     margin-left:35%;
+     overflow: hidden;
+}
+
+.run-icon3{
+    color:rgb(32, 143, 106,0.5);
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+     transform: translateY(100px);
+     margin-left: 10px;
+     transition: 0.4s;
+}
+
+.run-icon1:hover .run-icon3 {
+    transform: translateY(1px);
+    color:rgb(32, 143, 106,1);
+  }
+
+
+  
+.run-icon4{
+    color:rgb(32, 143, 106,0.5);
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.run-icon1:hover .run-icon4{
+    transform: translateY(-200px);
+}
+
+.section-hr{
+    margin-top: 15px;
+    width:1198px;
+    margin-left: 135px;
+    background-color:rgb(24, 97, 74);
+    height:3px;
+    border: none;
+}
+
+.products{
+    text-align: center;
+    margin-top:10px;
+}
+
+.product-h2{
+    color:rgb(13, 59, 44);
+    font-size: 30px;
+    transform: translateY(55px);
+    font-family: Arial, sans-serif;
+}
+
+.product-h2 hr{
+    width:100px;
+    height:2px;
+    border: none;
+    background-color:rgb(26, 114, 85);
+    margin-left: 690px;
+    margin-top: 5px;
+    transition: transform 0.5s;
+}
+
+
+.product-h2:hover hr{
+    transform: scale(1.5,1);
+}
+
+
+.products1, .products2{
+    display:flex;
+    width:80%;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   transform: translateY(90px);
+}
+
+.products-item1,.products-item2,.products-item3,.products-item4,.products-item5,.products-item6{
+    flex-basis:30%;
+    height:350px;
+    background-color: rgb(71, 37, 37);
+}
+
+.products-item1{
+    background: url(../Images/Cat\ tree.webp) center/cover;
+    position: relative;
+}
+
+
+.products-item2{
+    background: url(../Images/Dog\ Ball.webp) center/cover;
+    position: relative;
+}
+
+.products-item3{
+    background: url(../Images/Cat\ Carrier.jpg) center/cover;
+    position: relative;
+}
+
+.products-item4{
+    background: url(../Images/Cat\ bed.jpg) center/cover;
+    position: relative;
+}
+
+.products-item5{
+    background: url(../Images/Cat\ belt.jpg) center/cover;
+    position: relative;
+}
+
+
+.products-item6{
+    background: url(../Images/6-meal\ feeder.jpg) center/cover;
+    position: relative;
+}
+
+
+.item1-front{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/Cat\ tree.webp) center/cover;
+    backface-visibility: hidden;
+    opacity:0;
+}
+
+.item1-back{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/71I7Ivo8t4L._AC_SS450_.jpg) center/cover;
+    opacity: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+
+.item1-back-overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color:rgb(240, 223, 202,0.2);
+    text-align: center;
+}
+
+.item1-back-overlay i{
+    font-size: 43;
+    margin-top: 150px;
+    margin-left:7px;
+    color:rgb(36, 126, 96);
+}
+
+
+
+
+.item2-front{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/ce16f2d756f89e38a2b1a1135e4e6fc7.jpg) center/cover;
+    backface-visibility: hidden;
+    opacity:0;
+}
+
+.item2-back{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/Dog\ ball2.webp) center/cover;
+    opacity: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.item3-front{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/Cat\ Carrier.jpg) center/cover;
+    backface-visibility: hidden;
+    opacity:0;
+}
+
+.item3-back{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/Dof\ Carrier.jpg) center/cover;
+    opacity: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+
+.item4-front{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/Cat\ bed.jpg) center/cover;
+    backface-visibility: hidden;
+    opacity:0;
+}
+
+.item4-back{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/Dof\ bed.jpg) center/cover;
+    opacity: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.item5-front{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/Cat\ belt.jpg) center/cover;
+    backface-visibility: hidden;
+    opacity:0;
+}
+
+.item5-back{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/Dog\ belt.webp) center/cover;
+    opacity: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+
+.item6-front{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/6-meal\ feeder.jpg) center/cover;
+    backface-visibility: hidden;
+    opacity:0;
+}
+
+.item6-back{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: url(../Images/6-meal\ feeder2.jpg) center/cover;
+    opacity: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+
+
+.products-item1:hover .flip {
+    transition:0.5s;
+    transform: rotateY(180deg);
+}
+.products-item2:hover .flip {
+    transition:0.5s;
+    transform: rotateY(180deg);
+}
+.products-item3:hover .flip {
+    transition:0.5s;
+    transform: rotateY(180deg);
+}
+.products-item4:hover .flip {
+    transition:0.5s;
+    transform: rotateY(180deg);
+}
+.products-item5:hover .flip {
+    transition:0.5s;
+    transform: rotateY(180deg);
+}
+.products-item6:hover .flip {
+    transition:0.5s;
+    transform: rotateY(180deg);
+}
+
+
+.flip{
+    width:100%;
+    height:100%;
+    transform-style: preserve-3d;
+    /* animation-name:flip; */
+    /* transform: rotateY(0deg); */
+    transition:1s ease-out;
+}
+
+
+
+
+
+/* @keyframes flip{
+   0%{
+    transform: rotateY(0);
+   }
+
+   100%{
+    transform: rotateY(180deg);
+    transform: rotateY(90deg);
+
+   }
+
+} */
+
+.products p{
+    display:inline-block;
+    font-size: 17px;
+    color:rgb(32, 143, 106);
+    font-family:Arial, Helvetica, sans-serif ;
+    transform: translateY(65px);
+    margin-left: -180px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.products2{
+   margin-top: 70px;
+}
+
+.s{
+    margin-top: 5px;
+    color:rgb(36, 126, 96);
+}
+
+.product2 h2{
+    color:rgb(36, 126, 96);
+}
+
+.products-item1 h2,.products-item2 h2,.products-item3 h2,.products-item4 h2,.products-item5 h2,.products-item6 h2{
+    color:rgb(29, 90, 70);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:200;
+    font-size: 20px;
+}
